@@ -12,10 +12,65 @@
             method 속성 : 입력 데이터의 전달 방식 지정(GET/POST)
             name 속성 : form 태그의 이름 지정-->
     <!-- input 태그 : 입력받을 때 사용하는 태그 
-            종류 : input type = "text"-->
+            종류 : input type = "text"
+                name 속성 : 입력한 값을 구분하기 위해 이름 지정
+                placeholder 속성 : 미리보기 텍스트
+                autofocus 속성 : 커서 위치 지정
+                maxlength 속성 : 길이 제한
+                value 속성 : 기본값 지정
+                readonly 속성 : 수정 불가 속성, 읽기 전용으로 설정-->
+    
     <form action = "#" method = "get">
         <p>일반 텍스트를 작성하는 공간</p>
-        <input type = "text"></input>
+        ID : <input type = "text" name = "ID" placeholder="ID를 입력해 주세요" autofocus></input>
+        <br/>
+        PW : <input type = "password" name = "PW" maxlength = "10"></input>
+        <br/>
+        주소 : <input type = "text" name ="Address" value = "광주" readonly></input>
+        <br/><br/>
+
+    <!-- checkbox, radio 
+            1. checkbox : 중복 가능, 모두 고르시오 등
+            2. radio : 중복 불가, 택 1 
+            이 두 가지 타입은 name과 value 속성이 필수적이다.-->
+            
+        <p>w좋아하는 커피 종류를 모두 골라주세요.</p>
+        아메리카노 <input type = "checkbox" name = "coffee" value = "아메리카노"/>
+        에스프레소 <input type = "checkbox" name = "coffee" value = "에스프레소"/>
+        카페라떼 <input type = "checkbox" name = "coffee" value = "카페라떼"/>
+        <br/><br/>
+        <p>성별을 골라 주세요.</p>
+        남성 <input type = "radio" name = "gender" value = "남성"/>
+        여성 <input type = "radio" name = "gender" value = "여성"/>
+        
+    <!-- select -->
+        <select>
+            <option value = "네이버">네이버</option>
+            <option value = "다음">다음</option>
+            <option value = "구글">구글</option>
+            <option value = "야후">야후</option>
+        </select>
+    <br/>
+    <!-- file 업로드 시 -->
+    <input type = "file"/>
+    <br/>
+    <!-- 색을 지정할 시  -->
+    <input type = "color"/>
+    <br/>
+    <!-- 수를 입력할 시 -->
+    <input type = "number"/>
+    <br/>
+    <!-- 범위를 입력할 시 -->
+    <input type = "range"/>
+    <br/>
+    <!-- 날짜를 입력할 시 -->
+    <input type = "date"/>
+    <br/>
+    <!-- 제출할 시 -->
+    <input type = "submit" value = "전송"/>
+    <!-- 초기화 버튼 -->
+    <input type = "reset" value = "다시 작성">
+
     </form>
 </body>
 </html>
