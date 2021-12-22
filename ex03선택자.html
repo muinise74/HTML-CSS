@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 선택자 * */
+        * {
+            color: green;
+        }
+
+        /* 태그 선택자 or 타입 선택자 태그의 이름으로 사용하여 선택 */
+        li {
+            color: yellow;
+        }
+
+        p {
+            color: blue;
+        }
+
+        /* 아이디 선택자 : #아이디이름 기호로 표시되며 특정한 요소 선택, 하나만 */
+        #salmon {
+            color: red;
+        }
+
+        /* 클래스 선택자 : .class이름 기호로 표시되며 특정한 요소 
+                          공통되는 스타일을 적용할 때 클래스를 사용 */
+        .food {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <p>웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+    <h1 class="food" id="title">이번 주에 뭐 먹지?</h1>
+    <ul>
+        <li class="food" id="salmon">연어</li>
+        <li class="food" id="tuna">참치</li>
+        <li class="food" id="salad">샐러드</li>
+    </ul>
+</body>
+
+</html>
