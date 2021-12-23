@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 반응 선택자
+            :active : 마우스로 클릭할 때 선택
+            :hover : 마우스를 올려놓았을 때 선택 */
+        div:hover {
+            color: yellow;
+        }
+        div:active {
+            color: red;
+        }
+
+        /* 문제
+            class가 hello인 요소를 마우스를 올렸을 때, 폰트 색깔이 빨간색 크기가 30px
+            마우스를 클릭했을때, 폰트색깔이 파란색 크기가 50px 로 만들어주세요
+         */
+
+         .hello:hover {
+            color: red;
+            font-size: 30px;
+         }
+
+         .hello:active {
+            
+            color: blue;
+            font-size: 50px;
+            font-weight: bold;
+         }
+    </style>
+</head>
+<body>
+    <div>교실 내에서 꼭! 꼭! 마스크를 써주세요!!</div>
+    <div class = "hello">Hello!! Merry Christmas!!</div>
+</body>
+</html>
