@@ -1,0 +1,30 @@
+div{
+    width: 500px;
+    height: 500px;
+}
+.header{
+    background-color: #ea4335;
+    height: 10%;
+}
+.nav{
+    background-color: #ff5e00;
+    height: 10%;
+}
+.side{
+    background-color: #4285f4;
+    height: 60%;
+    width: 30%;
+    float: left
+}
+.section1{
+    background-color: #34a853;
+    height: 30%;
+}
+.section2{
+    background-color: #fbbc05;
+    height: 30%;
+}
+.footer{
+    background-color: #8a8d92;
+    height: 20%;
+}
